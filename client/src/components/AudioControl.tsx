@@ -9,7 +9,7 @@ export function AudioControl() {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // Simple audio URL - sini tempat ubah url musik nya 🗿
-  const audioSrc = "https://files.catbox.moe/5x6yqg.mp3";
+  const audioSrc = "https://files.catbox.moe/gg3wps.mp3";
 
   useEffect(() => {
     const audio = audioRef.current;

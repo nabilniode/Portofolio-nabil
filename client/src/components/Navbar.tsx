@@ -53,7 +53,7 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="font-bold text-xl text-neutral-900 dark:text-neutral-100">
-              aka
+              nabil.
             </div>
 
             {/* Desktop Navigation & Controls */}
