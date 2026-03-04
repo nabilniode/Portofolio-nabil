@@ -47,7 +47,7 @@ export function Contact() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-3xl lg:text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-12 text-center"
         >
-          Hubungi Saya
+          Contact me
         </motion.h2>
 
         <motion.div

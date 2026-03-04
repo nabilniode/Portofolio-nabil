@@ -4,6 +4,20 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { type Server } from "http";
 
+/**
+ * Fungsi log untuk mencetak pesan ke terminal dengan format waktu.
+ * Ini yang menyebabkan error sebelumnya karena belum ada di file ini.
+ */
+export function log(message: string, source: string = "express") {
+  const formattedTime = new Date().toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  });
+  console.log(`${formattedTime} [${source}] ${message}`);
+}
+
 export async function setupVite(app: Express, server: Server) {
   if (process.env.NODE_ENV !== "development") {
     return;
